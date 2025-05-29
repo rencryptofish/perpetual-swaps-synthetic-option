@@ -1,5 +1,7 @@
 # Leverage and path dependence for perpetual swaps
 
+Every year, billions of dollars in leveraged perpetual positions get liquidated. Understanding path dependence through simulations helps traders build intuition on the implicit duration of their leveraged perp positions. 
+
 Perpetual swaps (perps) are broadly considered as delta-one instruments, meaning that they create a 1-1 payoff with the price of the underlying asset. However due to the nature of leverage of most traders of perpetual swaps, the path dependence of the underlying spot asset is important because of the risk of liquidation. The liquidations that happen in perps are either intentional when traders construct the position with a synthetic option payoff in mind or unintentional when traders are forcibly liquidated when their liquidation threshold is hit. This article tries to share some intuition around the path dependence nature of perpetual swaps when using leverage and how they can behave as a synthetic option. 
 
 ## What is path dependence and why does it matter?
@@ -14,7 +16,7 @@ If we were to plot the payoff of a leveraged long perpetual swap, we get payoffs
 
 ## Expected Time to Liquidation
 
-One way to think about a leveraged perpetual swap position is the "Expected Time to Liquidation." Although no perp trader expects to get liquidated, intuition around how long a perp position is expected to survive can provide helpful intuition on the implicit duration of the position expressed. 
+One way to think about a leveraged perpetual swap position is the "Expected Time to Liquidation." The Expected Time to Liquidation can be calculated as the expected first passage time through a price. Although no perp trader expects to get liquidated, intuition around how long a perp position is expected to survive can provide helpful intuition on the implicit duration of the position expressed. 
 
 ---
 Crypto price movements are not geometric Brownian motion and have sharp gaps but this is to provide a baseline intuition.
